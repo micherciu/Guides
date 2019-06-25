@@ -1,25 +1,26 @@
 # Guide of using CLI commands for GitHub 
-* what I commonly used *
+*what I commonly used*
 
 0. To clone a repository just do:
 
-`# git clone *"the_repository_you_are_intereseted_for"*`
+**`# git clone *the_repository_you_are_intereseted_for*`**
 
 1. Create a branch
 
-`# git checkout -b *"the_new_branch"*`
+**`# git checkout -b *the_new_branch*`**
 
 2. Delete a specific branch
 > !!! please note that you have to be in another branch.
 
-`# git branch -d *"the_specigic_branch"*`
+**`# git branch -d *the_specigic_branch*`**
 
 3. Switching the branch
-`# git checkout *"switch_the_branch"*`
+
+**`# git checkout *switch_the_branch*`**
 
 4. Informations about the commits
 
-`# git log`
+**`# git log`**
 
 5. Check the current status of local working directory 
 > will show you which files are staged, unstaged, and untracked
