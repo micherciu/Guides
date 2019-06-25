@@ -12,7 +12,7 @@
 2. Delete a specific branch
 > !!! please note that you have to be in another branch.
 
-**`# git branch -d *the_specigic_branch*`**
+**`# git branch -d \"the_specific_branch\"`**
 
 3. Switching the branch
 
