@@ -2,17 +2,17 @@
 * what I commonly used *
 
 0. To clone a repository just do:
-# git clone __the_repository_you_are_intereseted_for+
+# git clone __the_repository_you_are_intereseted_for__
 
 1. Create a branch
-# git checkout -b __the_new_branch+
+# git checkout -b __the_new_branch__
 
 2. Delete a specific branch
-# git branch -d __the_specigic_branch+ 
+# git branch -d __the_specigic_branch__ 
 *!!! please note that you have to be in another branch.
 
 3. Switching the branch
-# git checkout __switch_the_branch
+# git checkout __switch_the_branch__
 
 4. Informations about the commits
 # git log
