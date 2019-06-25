@@ -1,5 +1,5 @@
 # Guide of using CLI commands for GitHub 
-*what I commonly used*
+<p class="text-center"><!-- *what I commonly use* --></p>
 
 0. To clone a repository just do:
 
