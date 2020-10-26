@@ -60,4 +60,17 @@
 
 **`# git branch -f master "your_new_temp_branch"`**
 
+12. Add an origin (or upstream or other repository to fetch from) remote URL
+
+**`# git remote add origin URL/user/repo.git"`**
+
+13. Check remote repositories
+
+**`# git remote -v"`**
+
+14.  Write to a remote repository:
+**`# git push <remote-name> <branch-name>"`**
+
+15. Remove the connection to the remote repository:
+**`# git remote rm <remote-name>"`**
 ...
