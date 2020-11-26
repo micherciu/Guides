@@ -10,7 +10,7 @@ RX, DI, RXD = reveived
 TX, DO, TXD = transmix
 "{attention} if your digital output is 5 V, then add voltage divider on the RX input of HC-06 such as to have about 3.3 V on it"
 
-2. Upload the code for bluetooth comunication: [arduino code](Guides/bluetooth-hc-06.ino)
+2. Upload the code for bluetooth comunication: [arduino code](https://github.com/micherciu/Guides.git/bluetooth-hc-06.ino)
 
 
 3. Configure SerialMonitor as "No line end" and baud rate 9600:
