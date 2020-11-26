@@ -1,0 +1,24 @@
+# Bluetooth HC-06 configuration
+---------------------------------------*How to Setup*---------------------------------------
+
+1. Connect HC-06 to arduino or anything else: 
+HC-06 has 4 pins:
+GND, VI, RX, TX    or G, V, DI, DO or GND, VCC, RXD, TXD
+GND, G = GROUND
+VI, V, VCC  = power voltage
+RX, DI, RXD = reveived 
+TX, DO, TXD = transmix
+"{attention} if your digital output is 5 V, then add voltage divider on the RX input of HC-06 such as to have about 3.3 V on it"
+
+2. Upload the code for bluetooth comunication:
+
+
+
+
+3. Configure SerialMonitor as "No line end" and baud rate 9600:
+
+4. Send AT configuration commands:
+
+
+**`..........."`**
+
