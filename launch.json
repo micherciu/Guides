@@ -9,23 +9,23 @@
             "cwd": "${workspaceRoot}",
             "preLaunchTask": "",
             "runToMain": true,
-            "executable": "./build-izirunf0_izigoboard/lk.elf",
+            "executable": "./your_file.elf",
             "device": "STM32F030CCT6",
             "configFiles": [
                 "interface/stlink-v2.cfg",
                 "target/stm32f0x.cfg"
             ],
             "preLaunchCommands": [
-                "file ./build-izirunf0_izigoboard/lk.elf",
+                "file ./your_file.elf",
                 "load",
-                "add-symbol-file ./build-izirunf0_izigoboard/lk.elf 0x8000000",
+                "add-symbol-file ./your_file.elf 0x8000000",
                 "enable breakpoint",
                 "monitor reset halt"
             ],
             "preRestartCommands": [
-                "file ./build-izirunf0_izigoboard/lk.elf",
+                "file ./your_file.elf",
                 "load",
-                "add-symbol-file .build-izirunf0_izigoboard/lk.elf 0x8000000",
+                "add-symbol-file ./your_file.elf 0x8000000",
                 "enable breakpoint",
                 "mon reset halt",
                 "continue"
