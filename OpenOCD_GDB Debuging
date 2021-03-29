@@ -1,0 +1,32 @@
+!!! GDB will connect to your embedded system only with a server daemon (in this case OpenOCD - the port to connect to is 3333)
+! This file give a help of using OpenOCD and GDB to debug a code on embeded systems
+! OpenOCD is the server that makes the connection between embeded system and the computer interface through GDB client
+
+I. Through linux concole:
+
+1. Open OpenOCD server
+# openocd -f interface/your_debug_interface  -f target/your_target_system
+
+! your debug interface = in openOCD scripts (in my case /usr/share/openocd/scripts/..) you will find board/chip/cpld/cpu/fpga/interface/target/, depending of your configuration
+                        you have to specify what fit best for you
+                        
+2. Open GDB client
+
+# arm-none-eabi-gdb path_to/your_elf_file.elf
+!you opened gdb client and loaded with the elf file specification
+
+# (gdb) target remote :3333
+!connected to the embedded system through OpenOCD
+
+# (gdb) monitor reset
+! do a software reset of your embedded system
+
+....
+
+II. Through GUI interface - Visual Studio Code
+1. you have to define a launch.json configuration file such as the present example (modified accordingly to your configuration)
+
+2. connect JTAG device to the embeded board and to your computer through USB port
+3. start debugging (F5) ... then control your step debugging through the small arrows (somewhere on your display)
+
+... have a nice debugging ...
