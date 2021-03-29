@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "Debug (OpenOCD)",
+            "servertype": "openocd",
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "",
+            "runToMain": true,
+            "executable": "./build-izirunf0_izigoboard/lk.elf",
+            "device": "STM32F030CCT6",
+            "configFiles": [
+                "interface/stlink-v2.cfg",
+                "target/stm32f0x.cfg"
+            ],
+            "preLaunchCommands": [
+                "file ./build-izirunf0_izigoboard/lk.elf",
+                "load",
+                "add-symbol-file ./build-izirunf0_izigoboard/lk.elf 0x8000000",
+                "enable breakpoint",
+                "monitor reset halt"
+            ],
+            "preRestartCommands": [
+                "file ./build-izirunf0_izigoboard/lk.elf",
+                "load",
+                "add-symbol-file .build-izirunf0_izigoboard/lk.elf 0x8000000",
+                "enable breakpoint",
+                "mon reset halt",
+                "continue"
+            ],
+            "svdFile": "${workspaceRoot}/.vscode/STM32F030.svd",
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 8000000,
+                "swoFrequency": 2000000,
+                "source": "probe",
+                "decoders": [
+                    { "type": "console", "label": "ITM", "port": 0 }
+                ]
+            }
+        }
+    ]
+}
