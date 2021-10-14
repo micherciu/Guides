@@ -62,15 +62,32 @@
 
 12. Add an origin (or upstream or other repository to fetch from) remote URL
 
-**`# git remote add origin URL/user/repo.git"`**
+**`# git remote add origin "URL/user/repo.git"`**
 
 13. Check remote repositories
 
-**`# git remote -v"`**
+**`# git remote -v`**
 
 14.  Write to a remote repository:
-**`# git push <remote-name> <branch-name>"`**
+**`# git push "<remote-name> <branch-name>"`**
 
 15. Remove the connection to the remote repository:
-**`# git remote rm <remote-name>"`**
+
+**`# git remote rm <remote-name>`**
+
+16. Rebase to a specific commit:
+
+**`# git rebase -i HEAD~X`**
+
+where X is backward last commits;
+From the interface showing up, with the commits to change, you can specify DROP in front of the SHA commits to be deleted ... then it is required to give a comment to the last changes.
+
+17. Remote update by force after rebase:
+
+**`# git push -f <remote-name> <branch-name>`**
+
+**`<remote-name>`** in general is origin; 
+
+**`<branch-name>`** in general is master or main;
+
 ...
