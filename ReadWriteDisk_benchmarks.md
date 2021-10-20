@@ -6,8 +6,7 @@ I. On Fedora
 1. Install the fio (documentation at https://fio.readthedocs.io/en/latest/) program:  
 **`# sudo dnf install fio `**
                         
-2. Test your disk (in this case /dev/sdb)
-
+2. Test your disk (in this case /dev/sdb):  
 **`# sudo fio -filename=/dev/sdb -direct=1 -iodepth 1 -thread -rw=randrw -ioengine=libaio -bs=512 -size=10M -numjobs=30 -runtime=60 -group_reporting -name=mytest `**
 
 **`-filename`** is the device under test;  
