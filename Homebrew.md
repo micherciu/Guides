@@ -5,10 +5,10 @@ Install Homebrew on your linux distribution:
  Homebrew can install its own current versions of glibc and gcc for older distributions of Linux"   @ https://docs.brew.sh/Homebrew-on-Linux
 
 1. Install group developments tools for linux:  
-**`# dnf groupinstall 'Development Tools' `**
+**`# sudo dnf groupinstall 'Development Tools' `**
 
 2. Install other necesssary tools:
-**`# dnf install procps-ng curl file git `**
+**`# sudo dnf install procps-ng curl file git `**
 
 3. Install Homebrew (you have not to be root)
 **`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" `**
